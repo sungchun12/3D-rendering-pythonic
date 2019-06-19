@@ -1,7 +1,7 @@
 # install parallel python packages
 # TODO: version these
 dask
-ray
+ray==0.7
 modin
 pylint
 pep8
