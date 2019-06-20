@@ -60,7 +60,7 @@ class Terrain(object):
                     [n + yoff, yoff + n + self.nfaces, yoff + n + self.nfaces + 1]
                 )
                 faces.append([n + yoff, yoff + n + 1, yoff + n + self.nfaces + 1])
-                colors.append([0, 0, 0, 0])
+                colors.append([0, 0, 0, 1])
                 colors.append([0, 0, 0, 0])
 
         faces = np.array(faces)
@@ -111,7 +111,7 @@ class Terrain(object):
         colors = np.array(colors, dtype=np.float32)
 
         self.m1.setMeshData(vertexes=verts, faces=faces, faceColors=colors)
-        self.offset -= 0.18
+        self.offset -= 0.05
 
     def start(self):
         """

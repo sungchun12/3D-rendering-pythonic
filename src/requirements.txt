@@ -3,3 +3,4 @@ opensimplex
 pyqtgraph
 numpy
 PyQt5
+pyaudio
